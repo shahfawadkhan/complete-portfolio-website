@@ -1,3 +1,5 @@
+
+@import url(./animation.css);
 * {
     margin: 0;
     padding: 0;
@@ -73,7 +75,13 @@
     color: #2f4f4f; 
     margin-left: 60px;
     margin-bottom: 40px;
+    
 }
+.typing1{
+    /* border: 1px solid red; */
+    width: 180px; 
+}
+
 
 .name-color {
     color: #1e90ff; 
