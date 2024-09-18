@@ -59,7 +59,7 @@
     gap: 30px;
     flex-wrap: wrap;
     margin: 0% auto;
-    margin-top: 55px;
+    margin-top: 67px;
     border-radius: 20px;
 }
 
@@ -247,6 +247,9 @@ img{
 }
 
 @media (max-width: 720px) {
+    .hamburger-menu{
+        display: block;
+    }
     .hero-section {
         flex-direction: column-reverse;
         height: auto; 
@@ -273,10 +276,6 @@ img{
         right: 0;
         bottom: 0; 
     }
-    
-    
-    
-    
     .typing1 , .typing2{
         font-size: 30px;
     }
@@ -299,5 +298,30 @@ img{
     }
     .intro p{
         font-size: 20px;
+    }
+}.hamburger-menu {
+    width: 40px;
+    height: 40px; /* Adjust for the multiple spans */
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #1e90ff;
+}
+
+.hamburger-menu span {
+    width: 77%;
+    height: 5px;
+    background-color: aliceblue;
+    display: block;
+    border-radius: 1px;
+    font-weight: lighter;
+}
+
+@media (max-width: 720px) {
+    .hamburger-menu {
+        display: flex; /* Use flex to enable flexbox properties */
     }
 }
