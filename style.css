@@ -7,6 +7,10 @@
     font-family: 'Trebuchet MS', sans-serif;
     transition: 1s;
 }
+body{
+    background:  aliceblue;
+}
+
 
 #navigation-bar {
     display: flex;
@@ -18,7 +22,7 @@
     position: fixed; 
     top: 0;         
     left: 0;
-    background-color: #fff; 
+    background-color: aliceblue; 
     z-index: 100;    
     /* border: 1px solid red;  */
 }
@@ -49,8 +53,8 @@
 
 .hero-section {
     /* background:#fafeff; */
-    background: aliceblue;
-    width: 97%;
+    /* background: aliceblue; */
+    width: 100%;
     height: 85vh;
     background-size: cover;
     display: flex;
@@ -60,7 +64,7 @@
     flex-wrap: wrap;
     margin: 0% auto;
     margin-top: 67px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 .hero-secInfo{
@@ -328,7 +332,7 @@ img{
 
 @media (max-width: 720px) {
     .hamburger-menu {
-        display: flex; /* Use flex to enable flexbox properties */
+        display: flex; 
     }
 }
 
@@ -352,7 +356,7 @@ img{
 .projects{
     /* border: 1px solid red; */
     /* margin-top: 20px; */
-    width: 90%;
+    width: 98%;
     display: flex;
     justify-content: center;
     /* margin: 0% auto; */
@@ -379,12 +383,145 @@ img{
     width: 45%;
     height: 300px;
     overflow: hidden;
+    position: relative;
 }
 .project-img img{
     width: 100%;
     height: 100%;
 }
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0,0,.5);
+    display: none;
+}
 .project-img img:hover{
     transform: scale(1.2);
+}
+.about-me{
+    width: 97%;
+    /* border: 1px solid red; */
+    height: 375px;
+    margin: 0% auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid white;
+    border-radius: 30px;
+    /* background-color: aliceblue; */
+
+}
+.about-img{
+    top: 20px;
+    width: 250px;
+    height: 340px;
+    /* background-color: red; */
+    /* border-radius: 50%; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: center; */
+    overflow: hidden;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+
+}
+.image-bg{
+    background-color: #1e90ff;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    /* left: 10px; */
+}
+.about-img img{
+    position: absolute;
+    width: 250px;
+    top: -10px;
+    left: 0px;
+    /* background: #2f4f4f; */
+}
+.intro-about-me{
+    width: 600px;
+    height: 300px;
+    /* border: 1px solid black; */
+    
+}
+.intro-about-me h1{
+    color: #1e90ff;
+    font-size: 60px;
+    /* text-align: center; */
+    padding: 10px;
+    margin-top: 15px;
+}
+.intro-about-me p{
+    font-size: 20px;
+    line-height: 30px;
+    padding: 5px;
+}
+.resume{
+    padding: .7rem 1.6rem;
+    border: 2.5px solid #1e90ff;
+    margin-top: 10px;
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+.resume:hover{
+    background-color: #1e90ff;
+    color: white;
+    transition: .2s;
+}
+
+.alt-theme .hero-section{
+    /* background-color: #073B4C; */
+    background-color: #011220;
+    width: 100%;
+    border-radius: 0%;
+    margin-top: 1px;
+    height: 100vh;
+}
+.alt-theme .portfolio{
+    color: #F1F1F1;
+}
+.alt-theme .hero-section h1 ,.alt-theme .my-name h1 , .alt-theme #navigation-bar a{
+    color: #F1F1F1;
+}
+.alt-theme #navigation-bar{
+    background-color: #011220;
+}
+.alt-theme .overlay{
+    display: block;
+}
+.alt-theme .service-box , .alt-theme .about-me ,.alt-theme .project-discription{
+    background-color: #011220;
+}
+.alt-theme .service-box p , .alt-theme .project-discription p , .alt-theme .about-me p,.alt-theme .intro-about-me h1{
+    color: #F1F1F1;
+}
+.alt-theme .service-box i{
+    color: #F1F1F1;
+}
+.alt-theme .project-discription h2{
+    color: #1e90ff;
+}
+.alt-theme .project-img img{
+    opacity: 1;
+} 
+
+    /* body{
+        background: #FFFFFF; 
+    color: #333333;
+    } */
+
+.alt-theme body {
+    background: #011220 !important; /* Dark mode background */
+    color: #E0E0E0; /* Dark mode text color */
 }
 

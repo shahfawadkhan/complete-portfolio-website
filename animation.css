@@ -85,21 +85,4 @@
     transition: 2s;
 }
 
-/* .animate-projects{
-    opacity: 0;
-    scale: .5;
-    animation: project-animation linear;
-    animation-timeline: view();
-}
 
-
-@keyframes project-animation {
-    0% {
-        scale: .5;
-        opacity: 0;
-    }
-    100% {
-        scale: 1;
-        opacity: 1;
-    }
-} */
