@@ -45,6 +45,7 @@ body{
 #nav-links a {
     text-decoration: none;
     color: #2f4f4f; 
+    font-size: 20px;
 }
 #nav-links a:hover{
     color: #1e90ff;
@@ -402,7 +403,7 @@ img{
 .about-me{
     width: 97%;
     /* border: 1px solid red; */
-    height: 375px;
+    height: 390px;
     margin: 0% auto;
     margin-top: 30px;
     display: flex;
@@ -564,3 +565,27 @@ img{
     border-radius: 20px;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 200px;
+    background-color: #fff;
+    /* border: 1px solid red; */
+}
+footer p{
+    text-align: center;
+}
+.footer-icons{
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 10px;
+}
+.footer-icons i{
+    font-size: 35px;
+}
+#copy-right{
+    margin-top: 10px;
+    color: #555;
+}
