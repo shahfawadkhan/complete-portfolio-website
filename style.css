@@ -742,12 +742,54 @@ footer p{
     .my-image {
         width: 100%; 
         height: auto; 
-        /* position: static;  */
         margin-top: 40px; 
         right: 0;
         bottom: 0; 
     }
 }
 
-
-
+.portfolio-hire{
+    width: 100%;
+    /* border:1px solid red; */
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+}
+#change-bg{
+    margin-right: 30px;
+}
+@media (max-width: 430px) {
+    .project-img{
+        /* margin-top: 50px; */
+        width: 230px;
+        /* height: 100%; */
+        height: 230px;
+       
+    
+    }
+    .projects{
+        gap: 120px;
+    }
+    .portfolio-hire button { 
+        display: block;
+        /* margin-right: 20px; */
+        margin: 0%;
+    }
+    .portfolio-hire{
+        /* margin: 0%; */
+        width: 100%;
+        height: 100px;
+        /* border:1px solid red; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #change-bg{
+        margin-right: 0;
+    }
+   
+    .my-name{
+        /* border: 1px solid red; */
+        width: 250px;
+    }
+}

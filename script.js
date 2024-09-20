@@ -20,7 +20,7 @@ function closeCross() {
 bar.addEventListener("click", closeBar);
 cross.addEventListener("click", closeCross);
 
-
+// for resetingggg
 function checkScreenSize() {
     if (window.innerWidth > 768) { 
         bar.style.display = 'none';
