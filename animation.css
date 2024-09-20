@@ -85,4 +85,37 @@
     transition: 2s;
 }
 
+/* .bar-anim {
+    animation: rotate-animation 1s infinite;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
+/* @keyframes bar-animation {
+    0% {
+        border-color: black;
+        opacity: 0;
+    }
+    50% {
+        border-color: red;
+        opacity: 0.5;
+    }
+    100% {
+        border-color: blue;
+        opacity: 1;
+    }
+} */
+
+@keyframes rotate-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
