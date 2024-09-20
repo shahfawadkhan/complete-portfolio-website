@@ -11,27 +11,29 @@
     
 </head>
 <body>
-    
+    <!-- Header sectionnn -->
     <header id="navigation-bar">
         <div class="my-name">
             <h1 id="animate-name"><span class="blue">S</span>HAH <span class="blue">F</span>AWAD <span class="blue">K</span>HAN</h1>
         </div>
     
+        <nav id="nav-links" class="animate-links">
+            <a href="#">HOME</a>
+            <a href="#services-section">SERVICES</a>
+            <a href="#recent-projects">PROJECTS</a>
+            <a href="#about-me">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+         
+        </nav>
+        
         <div class="bar-anim">
             <i class="fa-solid fa-bars" id="bar"></i>
             <i class="fa-solid fa-xmark " id="cross-mark"></i>
+            <a href=""><img src="./images/change.png" alt="" width="35px" id="change-bg"></a>
         </div>
-        
-        <nav id="nav-links" class="animate-links">
-            <a href="">HOME</a>
-            <a href="#services-section">SERVICES</a>
-            <a href="">PROJECTS</a>
-            <a href="">ABOUT</a>
-            <a href="">CONTACT</a>
-            
-        </nav>
-        <a href=""><img src="./images/change.png" alt="" width="35px" id="change-bg"></a>
     </header>
+
+    <!-- hero sectionnn -->
         <div class="hero-section">
             <div class="hero-secInfo"> 
                 <h1>
@@ -54,6 +56,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- service section -->
     
         <div class="services" id="services-section">
             
@@ -90,7 +94,7 @@
         <!-- about -->
 
 
-        <div class="about-me">
+        <div class="about-me" id="about-me">
             <div class="outer-img-div">
 
                 <div class="about-img">
@@ -101,16 +105,17 @@
             </div>
         
             <div class="intro-about-me">
-                <h1><span style="color: #2f4f4f;">About</span> Me</h1>
+                <h1>About <span class="blue">Me</span></h1>
                 <p>Hi, I'm a passionate web developer with a keen eye for design and functionality. With experience in front-end and back-end technologies, I enjoy creating seamless user experiences and responsive web designs. I'm always excited to take on new challenges and continuously learn to refine my skills.</p>
 
-                <buttom class="resume">DOWNLOAD RESUME</buttom>
+                <a href="./images/resume.png" class="resume" download>Resume</a>
             </div>
         </div>
         
 
- 
-        <div class="recent-projects">
+ <!-- recent project -->
+
+        <div class="recent-projects" id="recent-projects">
             <h1 class="my-projects">RECENT <span style="color: #1e90ff;">PROJECTS</span></h1>
 
             <div class="projects animate-projects">
@@ -154,7 +159,7 @@
       
         <!-- contact -->
 
-        <div class="contact-info">
+        <div class="contact-info" id="contact">
             <h1>CONTACT <span class="blue">INFO</span></h1>
             <div class="contact-container">
                 <div class="contact-details">
@@ -192,14 +197,16 @@
             </div>
         </div>
 
+        <!-- fooooooooooteeerrrr -->
+
         <footer>
             <div class="footer-details">
                 <h1><span class="blue">S</span>HAH <span class="blue">F</span>AWAD <span class="blue">K</span>HAN</h1>
                 <p>Your complete Web Solutions</p>
                 <div class="footer-icons">
-                    <i class="fa-brands fa-linkedin" style="color: #1e90ff;"></i>
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-youtube" style="color: crimson;"></i>
+                    <a href="https://www.linkedin.com/in/shah-fawad-khan-ba9380285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"> <i class="fa-brands fa-linkedin" style="color: #1e90ff;" ></i></a>
+                    <a href="https://github.com/shahfawadkhan" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.youtube.com/@Shahfawadkhan1" target="_blank"><i class="fa-brands fa-youtube" style="color: crimson;"></i></a>
                 </div>
                 <p id="copy-right">&copy; 2024 Shah Fawad Khan. All rights reserved.</p>
             </div>

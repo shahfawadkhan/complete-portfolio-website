@@ -28,8 +28,68 @@ body{
     z-index: 100;    
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
     
-    /* border: 1px solid red;  */
 }
+
+
+/* for darkModw */
+body.darkmode {
+    background: #00171f;
+    color: white;
+}
+
+body.darkmode #navigation-bar ,
+ body.darkmode .hero-section , 
+ body.darkmode .about-me ,
+ body.darkmode footer
+ {
+    background-color: #00171f;
+    
+}
+
+body.darkmode .service-box{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+body.darkmode .service-box:hover{
+    box-shadow: 0px 0px 20px white;
+}
+body.darkmode .service-box p {
+    color: black;
+}
+body.darkmode .my-name h1{
+    color: whitesmoke;
+}
+body.darkmode #navigation-bar a , 
+body.darkmode .hero-secInfo h1,
+body.darkmode .btn,
+body.darkmode .services-intro,
+body.darkmode .service-box p,
+body.darkmode .service-box i,
+body.darkmode .project-discription p,
+body.darkmode .project-discription h2
+{
+    color: white;
+}
+
+body.darkmode .about-me,
+body.darkmode .projects,
+body.darkmode .contact-details
+{
+    box-shadow: 0px 0px 10px #1e90ff;
+    border-radius: 10px;
+}
+body.darkmode footer{
+    box-shadow: 0px 0px 10px white;
+}
+
+body.darkmode .resume,
+body.darkmode .intro-about-me h1{
+    color: white !important;
+}
+
+
+/* for dark mode */
+
+
 
 .my-name h1 {
     color: #2f4f4f; 
@@ -38,7 +98,9 @@ body{
 .blue {
     color: #1e90ff; 
 }
-
+.intro-about-me h1{
+    color: black !important;
+}
 #nav-links {
     display: flex;
     justify-content: space-around;
@@ -53,11 +115,9 @@ body{
 }
 #nav-links a:hover{
     color: #1e90ff;
-    
 }
 
 .hero-section {
-    /* background:#fafeff; */
     background: aliceblue;
     width: 100%;
     height: 100vh;
@@ -69,23 +129,16 @@ body{
     flex-wrap: wrap;
     margin: 0% auto;
     margin-top: 60px;
-    /* border-radius: 20px; */
-   
 }
 
 .hero-secInfo{
     width: 60%;
 }
 
-
-
-
 .hero-secInfo h1 {
     color: #2f4f4f; 
     margin-left: 30px;
     margin-bottom: 20px;
-    /* border: 1px solid red; */
-    
 }
 
 .name-color {
@@ -98,12 +151,12 @@ body{
 #web-dev{
     font-size: 50px;
 }
-
+.portfolio-hire{
+    width: 400px !important;
+}
 .portfolio {
-    /* padding: 1rem 4rem; */
     border: 2px solid #1e90ff; 
     background-color: #1e90ff;
-    /* background: none; */
     margin-left: 30px;
     font-size: 30px;
     font-weight: bolder;
@@ -113,11 +166,9 @@ body{
     margin-bottom: 30px;
     width: 200px;
     height: 70px;
-    /* padding: 10px; */
 }
 .hire-me{
     border: 2px solid #1e90ff; 
-    /* background-color: #1e90ff; */
     background: none;
     margin-left: 30px;
     font-size: 30px;
@@ -130,6 +181,10 @@ body{
     height: 70px;
 
 }
+.hire-me:hover{
+    background-color: #1e90ff;
+    color: white;
+}
 
 
 .portfolio:hover {
@@ -141,7 +196,6 @@ body{
   position: relative;
     max-width: 20rem;
     height: 430px;
-    /* border: 1px solid red; */
     right:50px;
     bottom: 20px;
 }
@@ -197,9 +251,7 @@ img{
 .services-intro{
     width: 40%;
     height: fit-content;
-    /* border: 1px solid red; */
     font-size: 22px;
-    /* padding: 12px; */
     margin: 0% auto;
     color: #2f4f4f;
     margin-bottom: 30px;
@@ -220,9 +272,7 @@ img{
     width: 280px;
     height: 320px;
     margin-top: 20px;
-
 }
-
 
 .service-box:hover {
     background-color: aliceblue;
@@ -257,7 +307,6 @@ img{
     margin-bottom: 15px;
     width: 100%;
     text-align: center;
-    /* border: 1px solid red; */
 }
 @media(max-width : 950px){
     .hero-section{
@@ -292,57 +341,36 @@ img{
         width: 370px;
         font-size:30px ;
     }
+    .portfolio-hire{
+        margin: 0% auto;
+    }
 }
-
-
-
-
 
 .recent-projects{
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     align-items: center;
-    /* margin: 0% auto; */
     margin-top: 60px;
     width: 100%;
-    gap: 25px;
-    /* backgroun
-    d-color: aliceblue; */
-
-    /* border: 1px solid red; */
-    
-    
+    gap: 25px;    
 }
 .recent-projects>h1{
     text-align: center;
     font-size: 50px;
     margin-bottom: 10px;
-
 }
 .projects{
-    /* border: 1px solid red; */
-    /* margin-top: 20px; */
     width: 90%;
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
     gap: 4px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    /* gap: 4px; */
-    /* margin: 0% auto; */
-    /* box-shadow: 0 0 8px #1e90ff */
-
-    /* background-color: aliceblue; */
 }
 .project-discription{
     width: 50%;
     height: 300px;
-    /* border: 1px solid black; */
-    /* background-color: aliceblue; */
-    
 }
 .projects h2{
     color: #2f4f4f;
@@ -359,7 +387,6 @@ img{
 #github-link{
     width: 200px;
     height: 60px;
-    /* border: 3px solid #1e90ff; */
     background: #1e90ff;
     text-decoration: none;
     font-size: 30px;
@@ -370,18 +397,13 @@ img{
     color:white;
     border-radius: 10px;
     margin-top: 10px;
-    /* display: none; */
 }
 .project-img{
     width: 350px;
-    /* height: 100%; */
     height: 350px;
     border-radius: 50%;
     overflow: hidden;
-    /* border: 1px solid red; */
-    /* position: relative; */
     box-shadow: 0 0 45px #1e90ff;
-
 }
 .project-img img{
     width: 100%;
@@ -399,28 +421,20 @@ img{
     align-items: center;
     flex-wrap: wrap;
     gap: 100px;
-    /* border: 2px solid white; */
-    /* border-radius: 30px; */
-    /* box-shadow:  0 0 10px #1e90ff; */
     background-color: aliceblue;
 }
 
 
 .about-img{
-    /* top: 20px; */
     width: 250px;
     height: 340px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* align-items: center; */
     overflow: hidden;
     border-bottom-left-radius: 150px;
     border-bottom-right-radius: 150px;
-    /* border: 1px solid red; */
-    /* background-color: aliceblue; */
-
 }
 .image-bg{
     background-color: #1e90ff;
@@ -428,25 +442,20 @@ img{
     height: 250px;
     border-radius: 50%;
     position: relative;
-    /* left: 10px; */
 }
 .about-img img{
     position: absolute;
     width: 250px;
     top: -10px;
     left: 0px;
-    /* background: #2f4f4f; */
 }
 .intro-about-me{
     width: 600px;
     height: 300px;
-    /* border: 1px solid black; */
-    
 }
 .intro-about-me h1{
     color: #1e90ff;
     font-size: 60px;
-    /* text-align: center; */
     padding: 10px;
     margin-top: 15px;
 }
@@ -464,6 +473,7 @@ img{
     font-size: 20px;
     font-weight: bolder;
     border-radius: 5px;
+    text-decoration: none;
 }
 .resume:hover{
     background-color: #1e90ff;
@@ -476,8 +486,6 @@ img{
     margin-top: 90px;
     width: 100%;
     height: 250px;
-    /* border: 1px solid red; */
-    
 }
 
 .contact-info h1{
@@ -507,10 +515,8 @@ img{
     width: 300px;
     height: 130px;
     gap: 20px;
-    /* background-color: aliceblue; */
     border-radius: 20px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-
 }
 
 footer{
@@ -534,7 +540,8 @@ footer p{
 }
 .footer-icons i{
     font-size: 35px;
-    margin-left: 5px;
+    margin-left: 25px;
+
 }
 #copy-right{
     margin-top: 10px;
@@ -548,50 +555,53 @@ footer p{
 }
 
 
-@media (max-width: 770px) {
+@media (max-width: 830px) {
     #bar{
         display: block;
+
     }
     .hero-section {
         flex-direction: column-reverse;
         height: auto; 
-        margin-top: 70px;
+        margin-top: 50px !important;
         width: 100%;
         box-sizing: border-box;
     }
+    body.darkmode #nav-links{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: aliceblue; 
+}
+/*  for dark mode */
+    body.darkmode #nav-links a{
+    border-bottom: 2px solid white;
+    }
+/* ------ */
 
     .hero-secInfo {
         width: 100%; 
         padding: 0%;
-        /* margin: 0% auto; */
-        /* border: 1px solid red; */
-        /* justify-content: center;
-        align-items: center; */
+
     }
     
     .name-color {
         color: #1e90ff; 
         font-size: 35px;
         margin: 0% auto;
-        /* border: 1px solid red; */
         width: 100%;
         
     }
    
     .hero-secInfo h1{
-        /* border: 1px solid red; */
         text-align: center;
     }
     .btn{
         width: 150px;
-        /* margin: 0% auto; */
-        /* border: 2px solid red; */
     }
     .portfolio-hire{
         display: flex;
         justify-content: center;
+        margin: 0% auto;
     }
-
     .my-image {
         width: 100%; 
         height: auto; 
@@ -600,21 +610,21 @@ footer p{
         right: 0;
         bottom: 0; 
     }
-    .typing1 , .typing2{
-        font-size: 30px;
-    }
     #web-dev{
         font-size: 30px;
     }
     .my-name{
+        width: 300px;
         display: flex;
-        /* justify-content: center; */
         align-items: center;
+
+    }
+    #change-bg{
+        margin-left: 10px;
     }
     .my-name h1{
-        width: 300px;
+        width: 280px;
         font-size:25px ;
-        /* border: 1px solid red; */
     }
     #nav-links {
         display: none;
@@ -636,6 +646,18 @@ footer p{
         100% {
             top: 60px;
         }
+    }
+    #navigation-bar{
+        justify-content: space-between;
+    }
+    
+    .bar-anim{
+        width: 120px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
     }
     
     #nav-links a{
@@ -660,11 +682,9 @@ footer p{
     .projects{
         width: 90%;
         flex-direction: column;
-        /* border: 1px solid red; */
     }
     .project-discription{
         width: 95%;
-        /* border: 1px solid black; */
         margin: 0% auto;
     }
     .project-img{
@@ -698,15 +718,12 @@ footer p{
     }
     .contact-details{
         margin: 0% auto;
-        /* border: 1px solid red; */
         gap: 30px;
     }
     .project2{
         flex-direction: column-reverse;
-
     }
-    
-    
+ 
 }
 
 @media (max-width: 998px){
@@ -715,9 +732,8 @@ footer p{
         gap: 10px;
     }
     .intro-about-me{
-       
         margin-bottom: 30px;
-        /* border: 1px solid red; */
+
         text-align: center;
     }
 }
@@ -749,8 +765,7 @@ footer p{
 }
 
 .portfolio-hire{
-    width: 100%;
-    /* border:1px solid red; */
+    width: 60%;
     display: flex !important;
     justify-content: space-around;
     align-items: center;
@@ -758,38 +773,39 @@ footer p{
 #change-bg{
     margin-right: 30px;
 }
+@media (max-width: 1008px){
+    .my-name{
+        width: 380px;
+    }
+}
 @media (max-width: 430px) {
     .project-img{
-        /* margin-top: 50px; */
         width: 230px;
-        /* height: 100%; */
         height: 230px;
-       
-    
     }
     .projects{
         gap: 120px;
     }
     .portfolio-hire button { 
         display: block;
-        /* margin-right: 20px; */
         margin: 0%;
     }
     .portfolio-hire{
-        /* margin: 0%; */
-        width: 100%;
+        margin: 0% auto;
+        width: 300px !important;
         height: 100px;
-        /* border:1px solid red; */
         display: flex;
         justify-content: space-around;
         align-items: center;
+        gap: 5px;
     }
     #change-bg{
         margin-right: 0;
     }
-   
     .my-name{
-        /* border: 1px solid red; */
-        width: 250px;
+        width: 230px;    
+    }
+    .my-name h1{
+        font-size: 20px;
     }
 }

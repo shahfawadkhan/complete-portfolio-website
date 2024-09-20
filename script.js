@@ -22,7 +22,7 @@ cross.addEventListener("click", closeCross);
 
 // for resetingggg
 function checkScreenSize() {
-    if (window.innerWidth > 768) { 
+    if (window.innerWidth > 830) { 
         bar.style.display = 'none';
         cross.style.display = 'none';
         navBar.style.display = 'flex'; 
@@ -36,3 +36,13 @@ function checkScreenSize() {
 
 window.addEventListener('resize', checkScreenSize);
 
+// for changing to dark and lightt modee....
+
+let changeThemeBtn = document.getElementById("change-bg");
+
+changeThemeBtn.addEventListener('click', changeTheme);
+
+function changeTheme(event) {
+    event.preventDefault(); // Corrected typo
+    document.body.classList.toggle('darkmode'); // Make sure you're targeting the body
+}
