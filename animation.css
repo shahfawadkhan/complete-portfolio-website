@@ -48,6 +48,9 @@
         opacity: 1;
     }
 }
+
+
+/* logo name */
 #animate-name{
     position: relative;
     animation: name-animation 3s forwards; 
@@ -63,6 +66,8 @@
     }
 }
 
+
+/* for animation of btnss */
 .animate-links{
     /* position: relative; */
     animation: links-animation 3s forwards; 
@@ -70,15 +75,15 @@
 }
 @keyframes links-animation {
     0% {
-        opacity: 0; /* Start fully transparent */
+        opacity: 0; 
     }
     100% {
-        opacity: 1; /* End fully visible */
+        opacity: 1; 
     }
 }
 
 .animate-btn {
-    opacity: 0; /* Ensure the initial state matches the animation */
-    animation: links-animation 4s forwards; /* 4-second animation to fade in */
+    opacity: 0; 
+    animation: links-animation 4s forwards; 
 }
 
