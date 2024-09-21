@@ -1,13 +1,36 @@
-
+.typing1 {
+    display: inline-block; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    width: 0; 
+    animation: type 1.8s forwards; 
+}
+.typing2 {
+    display: inline-block; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    width: 0; 
+    animation: type 1.8s forwards; 
+    animation-delay: .7s;
+}
+.typing3{
+    display: inline-block; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    width: 0; 
+    animation: type 1.8s forwards; 
+    animation-delay: 1s;
+}
 
 @keyframes type {
     from {
-        width: 0;
+        width: 0; 
     }
     to {
-        width: 100%;
+        width: 100%; 
     }
 }
+
 .animate-image {
     position: relative;
    
@@ -47,25 +70,15 @@
 }
 @keyframes links-animation {
     0% {
-        
-        opacity: 0;
+        opacity: 0; /* Start fully transparent */
     }
     100% {
-       
-        opacity: 1;
+        opacity: 1; /* End fully visible */
     }
 }
 
-.animate-btn{
-    animation: links-animation 3s forwards; 
-    transition: 2s;
+.animate-btn {
+    opacity: 0; /* Ensure the initial state matches the animation */
+    animation: links-animation 4s forwards; /* 4-second animation to fade in */
 }
 
-@keyframes rotate-animation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}

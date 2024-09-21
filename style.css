@@ -84,6 +84,11 @@ body.darkmode footer{
 body.darkmode .resume,
 body.darkmode .intro-about-me h1{
     color: white !important;
+
+}
+body.darkmode #nav-links a:hover{
+    color: #1e90ff;
+    transition: .2s;
 }
 
 
