@@ -547,6 +547,8 @@ footer h1{
 }
 footer p{
     text-align: center;
+    color: #555;
+    margin-top: 5px;
 }
 .footer-icons{
     text-align: center;
