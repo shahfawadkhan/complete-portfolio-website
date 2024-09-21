@@ -38,9 +38,9 @@ window.addEventListener('resize', checkScreenSize);
 
 // for changing to dark and lightt modee....
 
-let changeTheme = document.getElementById("change-bg");
+let changeThemeBtn = document.getElementById("change-bg");
 
-changeTheme.addEventListener('click', changeTheme);
+changeThemeBtn.addEventListener('click', changeTheme);
 
 function changeTheme(event) {
     event.preventDefault(); 
