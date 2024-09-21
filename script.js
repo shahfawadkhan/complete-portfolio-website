@@ -38,11 +38,11 @@ window.addEventListener('resize', checkScreenSize);
 
 // for changing to dark and lightt modee....
 
-let changeThemeBtn = document.getElementById("change-bg");
+let changeTheme = document.getElementById("change-bg");
 
-changeThemeBtn.addEventListener('click', changeTheme);
+changeTheme.addEventListener('click', changeTheme);
 
 function changeTheme(event) {
-    event.preventDefault(); // Corrected typo
-    document.body.classList.toggle('darkmode'); // Make sure you're targeting the body
+    event.preventDefault(); 
+    document.body.classList.toggle('darkmode'); 
 }
