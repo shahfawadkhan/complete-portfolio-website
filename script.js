@@ -2,6 +2,7 @@
 let bar = document.getElementById("bar");
 let cross = document.getElementById("cross-mark");
 let navBar = document.getElementById("nav-links");
+let link = document.querySelectorAll(".link");
 
 // Function to handle opening and closing the menu
 function closeBar() {
@@ -16,18 +17,25 @@ function closeCross() {
     navBar.style.display = 'none';
 }
 
+for (let i = 0; i < link.length; i++) {
+    link[i].addEventListener('click', function () {
+        closeCross();
+    });
+}
+
+
 
 bar.addEventListener("click", closeBar);
 cross.addEventListener("click", closeCross);
 
 // for resetingggg
 function checkScreenSize() {
-    if (window.innerWidth > 830) { 
+    if (window.innerWidth > 830) {
         bar.style.display = 'none';
         cross.style.display = 'none';
-        navBar.style.display = 'flex'; 
+        navBar.style.display = 'flex';
     } else {
-      
+
         bar.style.display = 'block';
         cross.style.display = 'none';
         navBar.style.display = 'none';
@@ -43,6 +51,6 @@ let changeThemeBtn = document.getElementById("change-bg");
 changeThemeBtn.addEventListener('click', changeTheme);
 
 function changeTheme(event) {
-    event.preventDefault(); 
-    document.body.classList.toggle('darkmode'); 
+    event.preventDefault();
+    document.body.classList.toggle('darkmode');
 }
